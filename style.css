@@ -11,3 +11,13 @@ Licence : GNU General Public License v2 ou version ultérieure
 Licence URI : LICENCE
 Domaine de texte : underscores
 */
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    background-color: blue;
+    color: gray;
+    
+}
