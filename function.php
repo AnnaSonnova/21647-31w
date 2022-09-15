@@ -1,6 +1,6 @@
 <?php
 /**
- * UNDERSCORES functions and definitions
+ * UNDERSCORES fonctions et définitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -8,22 +8,22 @@
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
-	// Replace the version number of the theme on each release.
+	// Remplacer le numéro de version du thème sur chaque version.
 	define( '_S_VERSION', '1.0.0' );
 }
 ////////////////////
 function underscores_setup(){
 
 /*
-		* Enable support for Post Thumbnails on posts and pages.
+		* Activer la prise en charge des miniatures des publications et des pages.
 		*
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
         add_theme_support( 'post-thumbnails' );
 
         /*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
+		* Changement du balisage de base par défaut pour le formulaire de recherche, le formulaire de commentaire et les commentaires
+		* à la sortie HTML5 valide.
 		*/
 	add_theme_support(
 		'html5',
@@ -43,7 +43,7 @@ function underscores_setup(){
 add_action( 'after_setup_theme', 'underscores_setup' );
 /////////////////////////
 /**
- * Enqueue scripts and styles.
+ * Scripts et styles enqueue.
  */
 function underscores_scripts() {
 	wp_enqueue_style( 'underscores-style', get_stylesheet_uri(), array(), _S_VERSION );
