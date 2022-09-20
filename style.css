@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Nom du thème : a22-31w
 Thème URI : http://underscores.me/
@@ -11,13 +12,7 @@ Licence : GNU General Public License v2 ou version ultérieure
 Licence URI : LICENCE
 Domaine de texte : underscores
 */
-
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-h1{
-    background-color: blue;
-    color: rgb(197, 48, 48);
-    
-}
+/*---------------------------------*/
+body {
+  background-color: rgb(235, 235, 154);
+}/*# sourceMappingURL=style.css.map */
