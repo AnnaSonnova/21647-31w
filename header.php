@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package UNDERSCORES
+ * @package underscore
  */
 
 ?>
@@ -23,22 +23,15 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			
 			<h1 class="site-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			
-				
-			<?php
-			
-				$underscores_description = get_bloginfo( 'description', 'display' );
-				if ( $underscores_description || is_customize_preview() ) :
-			?>
-				<p class="site-description"><?php echo $underscores_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+			</h1>
+		<?php
+			$underscore_description = get_bloginfo( 'description', 'display' );
+			if ( $underscore_description || is_customize_preview() ) : ?>
+			<p class="site-description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<?php endif; ?>	
 		</div><!-- .site-branding -->
-
-		
 	</header><!-- #masthead -->

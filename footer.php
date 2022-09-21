@@ -6,13 +6,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package UNDERSCORES
+ * @package underscore
  */
 
 ?>
 
 	<footer>
-		<p>Mon pied de page</p>
+        <p>Mon pied de page</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

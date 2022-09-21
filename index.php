@@ -1,32 +1,30 @@
 <?php
-
-/** 
- * Le fichier modèle principal par defaut
+/**
+ * The main template file
  *
- * C’est le fichier modèle le plus générique dans un thème WordPress
- * et l’un des deux fichiers requis pour un thème (l’autre étant style.css).
- * Il est utilisé pour afficher une page lorsque rien de plus spécifique ne correspond à une requête.
- * Par exemple, il rassemble la page d’accueil quand aucun fichier home.php n’existe.
- * 
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package UNDERSCORES
+ * @package underscore
  */
 ?>
 
-<?php  get_header();?>
+<?php get_header(); ?>
 
     <main>
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
-				the_post();
-                the_title('<h1>', '</h1>');
+				the_post(); 
+                the_title('<h2>','</h2>');
                 the_content(null, true);
-            endwhile; 
-        endif;       
-	  ?>
-
-    </main>
-<?php get_footer();?>
-
+            endwhile;
+        endif;
+    ?>    
+    </main>    
+<?php get_footer(); ?>
+</html>
