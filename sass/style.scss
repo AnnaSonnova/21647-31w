@@ -1,28 +1,27 @@
 /*!
-Nom du thème : a22-31w
-Thème URI : http://underscores.me/
-Auteur : Underscores.me
-Auteur URI : http://underscores.me/
-Description : Description
-Version : 1.0.0
-Testé jusqu’à : 5,4
-Nécessite PHP : 5.6
-Licence : GNU General Public License v2 ou version ultérieure
-Licence URI : LICENCE
-Domaine de texte : underscores
+Nom du thème : a22-31w
+Thème URI : http://underscores.me/
+Auteur : Underscores.me
+Auteur URI : http://underscores.me/
+Description : Description
+Version : 1.0.0
+Testé jusqu’à : 5,4
+Nécessite PHP : 5.6
+Licence : GNU General Public License v2 ou version ultérieure
+Licence URI : LICENCE
+Domaine de texte : underscores
 */
 
-/*---------------------------------*/
-// Import variables and mixins.
-@import "variable/couleur";
-@import "variable/police";
-@import "variable/structure";
+// Importation des variables.
+@import "variables/couleurs";
+@import "variables/structure";
+@import "variables/polices";
 
-@import "generic/box-sizing";
+// normalize et box-sizing
 @import "generic/normalize";
+@import "generic/box-sizing";
 
-//les element de base
-
+// les éléments de base
 @import "base/body";
 @import "base/heading";
 
