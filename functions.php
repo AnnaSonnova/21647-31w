@@ -16,18 +16,19 @@ if ( ! defined( '_S_VERSION' ) ) {
 //////////////////////////////////////////////////
 function underscore_setup() {
 
-    	/*
-		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
-		* hard-coded <title> tag in the document head, and expect WordPress to
-		* provide it for us.
+    	
+		/*
+		* Laissez WordPress gérer le titre du document.
+		* En ajoutant le support de thème, nous déclarons que ce thème n’utilise pas un
+		* balise <title> codée en dur dans la tête du document, et s’attendre à ce que WordPress
+		* Fournissez-le-nous.
 		*/
 	add_theme_support( 'title-tag' );
 
 
     /*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
+		* Remplacer le balisage de base par défaut pour le formulaire de recherche, le formulaire de commentaires et les commentaires
+		* à la sortie HTML5 valide.
 		*/
 	add_theme_support(
 		'html5',
@@ -46,7 +47,7 @@ add_action( 'after_setup_theme', 'underscore_setup' );
 
 
 /**
- * Enqueue scripts and styles.
+ * Enqueue scripts et styles.
  */
 function underscore_scripts() {
 	/*
