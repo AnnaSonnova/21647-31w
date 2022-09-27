@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-Nom du thème : a22-31w
+Nom du thème : a22-31w-Anna Chumbaieva
 Thème URI : http://underscores.me/
 Auteur : Underscores.me
 Auteur URI : http://underscores.me/
@@ -334,11 +334,15 @@ html {
 }
 
 body {
-  background-color: rgb(171, 236, 147);
+  background-color: rgb(204, 241, 191);
 }
 
 main {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.trace {
+  color: rgb(232, 61, 27);
 }
 
 h1 {

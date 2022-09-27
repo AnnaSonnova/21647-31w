@@ -15,8 +15,6 @@ if ( ! defined( '_S_VERSION' ) ) {
 
 //////////////////////////////////////////////////
 function underscore_setup() {
-
-    	
 		/*
 		* Laissez WordPress gérer le titre du document.
 		* En ajoutant le support de thème, nous déclarons que ce thème n’utilise pas un
