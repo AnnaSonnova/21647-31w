@@ -21,7 +21,29 @@
             while ( have_posts() ) :
 				the_post(); 
                 the_title('<h2>','</h2>');
-                the_content(null, true);
+                the_content(null, true);?>
+                <section>
+                    <small>
+                <?php the_weekday();
+                      the_date();
+                      the_time();
+                ?>
+                    </small>
+                    <code>
+                    <?php 
+                    the_author();
+                    
+                    ?>
+                    </code>
+                    <pre>
+                    <?php 
+                    the_category();
+                    
+                    ?>
+                    </pre>
+                </section>
+                <?php 
+
             endwhile;
         endif;
     ?>    
