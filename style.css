@@ -351,4 +351,20 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+small, pre, code, span {
+  background-color: rgb(79, 152, 5);
+}
+
+pre {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+code {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+span {
+  margin: 0 10px;
 }/*# sourceMappingURL=style.css.map */

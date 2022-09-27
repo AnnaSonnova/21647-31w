@@ -33,5 +33,9 @@
 			if ( $underscore_description || is_customize_preview() ) : ?>
 			<p class="site-description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>	
+
 		</div><!-- .site-branding -->
+		<?php wp_nav_menu(array(
+			"menu" => "primaire"
+		)) ?>	
 	</header><!-- #masthead -->
