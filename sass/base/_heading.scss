@@ -1,6 +1,11 @@
 h1{
-    font-family: $police__titre-principal;  
+    font-family: $police__titre-principal;
+    
   }
   h2,h3,h4,h5,h6 {
-      font-family: $police__titre-secondaire;  
+      font-family: $police__titre-secondaire; 
+      
+  }
+  a{
+    color: rgb(240, 78, 24);
   }
