@@ -430,10 +430,10 @@ big {
 }
 
 a {
-  color: rgb(187, 128, 249);
+  color: rgb(136, 70, 206);
 }
 a:visited {
-  color: rgb(187, 128, 249);
+  color: rgb(126, 55, 202);
 }
 a:hover, a:focus, a:active {
   color: rgb(99, 153, 112);
