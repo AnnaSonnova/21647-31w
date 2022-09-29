@@ -37,7 +37,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0;
+  margin: 20px;
 }
 
 /**
@@ -573,6 +573,26 @@ figure {
   margin: 1em 0;
 }
 
+.menu-primaire-container {
+  background-color: rgb(52, 111, 34);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .menu-primaire-container .menu {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+.menu-primaire-container .menu-item {
+  margin-top: 20px;
+}
+.menu-primaire-container a {
+  text-decoration: none;
+  padding: 20px;
+  color: rgb(212, 237, 205);
+}
+.menu-primaire-container a:hover {
+  color: rgb(124, 135, 125);
 }/*# sourceMappingURL=style.css.map */
