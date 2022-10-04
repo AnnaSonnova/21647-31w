@@ -1,11 +1,11 @@
 $couleur__background-body : rgb(204, 241, 191);
 
 /*----------------Couleur de titres------*/
-$couleur__background-h1 : rgb(246, 122, 21);
+$couleur__background-h1 : rgb(247, 104, 38);
 $couleur__background-h2 :rgb(243, 79, 15);
 $couleur__background-h3 :rgb(241, 7, 7);
 $couleur__background-h4 :rgb(114, 16, 3);
-$couleur__background--code : rgb(79, 152, 5);
+
 
 /*----------Couleur des lien---------------*/
 $color__link: rgb(136, 70, 206);
@@ -16,7 +16,7 @@ $color__link-hover: rgb(99, 153, 112);
 $color__border-button: rgb(161, 234, 178);
 $color__background-button:rgb(241, 154, 143);
 $color__border-button-hover: rgb(59, 47, 70);
-$color__border-button-focus: rgb(87, 66, 57);
+$color__border-button-focus: rgb(241, 109, 52);
 
 /*-----------couleur fields input-------*/
 $color__text-input:rgb(59, 47, 70);
@@ -29,6 +29,7 @@ $color__background-hr:rgb(69, 60, 78);
 
 
 /*-----------simple---------*/
-$color__background-pre: #413838;
+$color__background-pre: #f78044;
 $color__background-ins:rgb(245, 150, 150);
 $color__border-abbr:rgb(240, 149, 149);
+$couleur__background--code : rgb(148, 240, 56);

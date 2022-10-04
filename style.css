@@ -349,7 +349,8 @@ main {
 }
 
 .trace {
-  color: rgb(232, 61, 27);
+  color: rgb(243, 115, 24);
+  font-size: 1.5em;
 }
 
 h1 {
@@ -364,16 +365,12 @@ a {
   color: rgb(240, 78, 24);
 }
 
-small, pre, code, span {
-  background-color: rgb(79, 152, 5);
+small, code, span {
+  background-color: rgb(148, 240, 56);
 }
 
-pre {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-code {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+small {
+  background-color: rgb(245, 150, 150);
 }
 
 span {
@@ -400,7 +397,10 @@ address {
 }
 
 pre {
-  margin-bottom: 1.5em;
+  background: #f78044;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 0.8em;
+  margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
   padding: 1.6em;
@@ -470,7 +470,7 @@ input[type=reset]:active,
 input[type=reset]:focus,
 input[type=submit]:active,
 input[type=submit]:focus {
-  border-color: rgb(87, 66, 57);
+  border-color: rgb(241, 109, 52);
 }
 
 input[type=text],
@@ -586,7 +586,11 @@ figure {
   margin-right: 20px;
 }
 .menu-primaire-container .menu-item {
-  margin-top: 20px;
+  margin-top: 30px;
+  max-width: 100%;
+}
+.menu-primaire-container .menu-item:hover {
+  background-color: rgb(128, 218, 90);
 }
 .menu-primaire-container a {
   text-decoration: none;
@@ -594,5 +598,5 @@ figure {
   color: rgb(212, 237, 205);
 }
 .menu-primaire-container a:hover {
-  color: rgb(124, 135, 125);
+  color: rgb(59, 67, 60);
 }/*# sourceMappingURL=style.css.map */

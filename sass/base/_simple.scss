@@ -1,15 +1,15 @@
-small, pre, code, span{
+small, code, span{
     background-color:$couleur__background--code ;
 }
-pre{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+small{
+	background-color:$color__background-ins;
 }
-code{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
 span{
     margin: 0 10px;
 }
+
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -30,8 +30,10 @@ address {
 }
 
 pre {
-	
-	margin-bottom: 1.5em;
+	background: $color__background-pre;
+	font-family: $font__pre;
+	line-height: $font__line-height-pre;
+	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
 	padding: 1.6em;
