@@ -12,7 +12,11 @@
         margin-right: 20px;
     }
     .menu-item{
-margin-top: 20px;
+margin-top: 30px;
+    }
+    .menu-item:hover{
+        background-color: rgb(128, 218, 90);
+
     }
     a{
         text-decoration: none;
@@ -20,7 +24,7 @@ margin-top: 20px;
         color: rgb(212, 237, 205);
     }
     a:hover{
-        color: rgb(124, 135, 125);
+        color: rgb(59, 67, 60);
     }
 
 }
