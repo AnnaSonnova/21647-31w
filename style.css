@@ -432,7 +432,7 @@ big {
 }
 
 a {
-  color: rgb(136, 70, 206);
+  color: rgb(80, 65, 139);
 }
 a:visited {
   color: rgb(126, 55, 202);
@@ -629,7 +629,7 @@ figure {
   margin: 0;
 }
 .menu__aside .menu-item {
-  background-color: rgb(215, 237, 230);
+  background-color: rgb(232, 237, 236);
   padding: 10px;
   margin: 20px;
 }

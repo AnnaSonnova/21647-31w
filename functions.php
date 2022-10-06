@@ -76,8 +76,8 @@ add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 
 	/*-------pour filtrer chaqun des elements du menu-----*/
 	function igc31w_filtre_choix_menu($obj_menu){
-		//var_dump($obj_menu);
-	die();
+	// 	var_dump($obj_menu);
+	//  die();
 		foreach($obj_menu as $cle => $value)
 		{
 		   // print_r($value);
