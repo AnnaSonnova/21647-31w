@@ -18,6 +18,7 @@ Domaine de texte : underscores
 /*-----------couleur fields input-------*/
 /*-----------couleur hr-------*/
 /*-----------simple---------*/
+/*----------Couleur des lien menu__aside---------------*/
 /*-------------simple----------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -341,7 +342,7 @@ html {
 }
 
 body {
-  background-color: rgb(204, 241, 191);
+  background-color: rgb(212, 231, 206);
 }
 
 main {
@@ -359,6 +360,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(59, 47, 70);
 }
 
 a {
@@ -442,6 +444,23 @@ a:focus {
   outline: thin dotted;
 }
 a:hover, a:active {
+  outline: 0;
+}
+
+/*--------------menu__aside------------*/
+.menu__aside a {
+  color: rgb(42, 101, 49);
+}
+.menu__aside a:visited {
+  color: rgb(16, 75, 15);
+}
+.menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
+  color: rgb(238, 176, 83);
+}
+.menu__aside a:focus {
+  outline: thin dotted;
+}
+.menu__aside a:hover, .menu__aside a:active {
   outline: 0;
 }
 
@@ -590,7 +609,7 @@ figure {
   max-width: 100%;
 }
 .menu__primaire .menu-item:hover {
-  background-color: rgb(128, 218, 90);
+  background-color: rgb(90, 141, 68);
 }
 .menu__primaire a {
   text-decoration: none;
@@ -601,6 +620,19 @@ figure {
   color: rgb(59, 67, 60);
 }
 
+.menu__aside {
+  display: flex;
+}
+.menu__aside .menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__aside .menu-item {
+  background-color: aliceblue;
+  padding: 10px;
+  margin: 20px;
+}
 .site {
   display: grid;
   grid-template-columns: 25% auto;
