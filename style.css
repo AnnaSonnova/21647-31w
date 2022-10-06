@@ -366,7 +366,7 @@ a {
 }
 
 small, code, span {
-  background-color: rgb(148, 240, 56);
+  background-color: rgb(24, 34, 15);
 }
 
 small {
@@ -573,30 +573,59 @@ figure {
   margin: 1em 0;
 }
 
-.menu-primaire-container {
-  background-color: rgb(52, 111, 34);
+.menu__primaire {
+  background-color: rgb(34, 71, 22);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.menu-primaire-container .menu {
+.menu__primaire .menu {
   list-style-type: none;
   display: flex;
   justify-content: center;
   margin-right: 20px;
 }
-.menu-primaire-container .menu-item {
+.menu__primaire .menu-item {
   margin-top: 30px;
   max-width: 100%;
 }
-.menu-primaire-container .menu-item:hover {
+.menu__primaire .menu-item:hover {
   background-color: rgb(128, 218, 90);
 }
-.menu-primaire-container a {
+.menu__primaire a {
   text-decoration: none;
   padding: 20px;
   color: rgb(212, 237, 205);
 }
-.menu-primaire-container a:hover {
+.menu__primaire a:hover {
   color: rgb(59, 67, 60);
+}
+
+.site {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.site__header {
+  grid-area: header;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget__area {
+  grid-area: sidebar;
+}
+
+.site__footer {
+  grid-area: footer;
+}
+
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
 }/*# sourceMappingURL=style.css.map */

@@ -15,7 +15,7 @@
 
 <?php get_header(); ?>
 
-    <main>
+    <main class="site__main">
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :

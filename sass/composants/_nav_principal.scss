@@ -1,23 +1,25 @@
-.menu-primaire-container{
-    background-color: rgb(52, 111, 34);
+//nav
+.menu__primaire{
+    background-color: rgb(34, 71, 22);
     display: flex;
     flex-direction: column;
     justify-content: center;
     
-
+    //ul
     .menu{
         list-style-type: none;
         display: flex;
         justify-content:center;
         margin-right: 20px;
     }
+
+    //li
     .menu-item{
-margin-top: 30px;
-max-width: 100%;
+        margin-top: 30px;
+        max-width: 100%;
     }
     .menu-item:hover{
         background-color: rgb(128, 218, 90);
-
     }
     a{
         text-decoration: none;
@@ -28,7 +30,7 @@ max-width: 100%;
         color: rgb(59, 67, 60);
     }
 
-}
+} //fin .menu__primaire
 .menu-primaire-container{}
 .menu-primaire-container .menu{}
 .menu-primaire-container .menu-item{} 

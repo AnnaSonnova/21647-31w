@@ -15,7 +15,7 @@
 <h1 class="trace">front-page.php</h1>
 <?php get_header(); ?>
 
-    <main>
+    <main class="site__main">
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
