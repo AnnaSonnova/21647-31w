@@ -614,7 +614,7 @@ figure {
 .menu__primaire a {
   text-decoration: none;
   padding: 20px;
-  color: rgb(212, 237, 205);
+  color: rgb(221, 235, 218);
 }
 .menu__primaire a:hover {
   color: rgb(59, 67, 60);
@@ -629,7 +629,7 @@ figure {
   margin: 0;
 }
 .menu__aside .menu-item {
-  background-color: aliceblue;
+  background-color: rgb(215, 237, 230);
   padding: 10px;
   margin: 20px;
 }
