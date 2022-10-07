@@ -75,17 +75,22 @@ add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 	add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 	/*-------pour filtrer chaqun des elements du menu-----*/
-	function igc31w_filtre_choix_menu($obj_menu){
+	function igc31w_filtre_choix_menu($obj_menu, $arg){
 	// 	var_dump($obj_menu);
 	//  die();
+	if ($arg->menu == "aside"){
 		foreach($obj_menu as $cle => $value)
 		{
 		   // print_r($value);
-		   //$value->title = substr($value->title,0,7);
+		   $value->title = substr($value->title,7);
 		   $value->title = wp_trim_words($value->title,3,"...");
+		   $array = explode(" ", $value->title);
+		   array_splice ($array,-1);
+		   $value->title = implode(" ", $array);
 		   // echo $value->title . '<br>';
 	 
 		}
+	}
 		return $obj_menu;
 	}
-	add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
+	add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu",10,2);

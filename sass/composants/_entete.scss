@@ -3,7 +3,11 @@
 }
 
 .site__title{
+font-size:clamp(2rem, 4vw, 5rem);
+    // a{
+    //     color:$couleur__site__title ;
 
+    // }
 }
 .site__description{
 

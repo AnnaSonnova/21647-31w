@@ -356,6 +356,7 @@ main {
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(0.9rem, 2vw, 2.5rem);
 }
 
 h2, h3, h4, h5, h6 {
@@ -633,6 +634,10 @@ figure {
   padding: 10px;
   margin: 20px;
 }
+.site__title {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+
 .site {
   display: grid;
   grid-template-columns: auto;
