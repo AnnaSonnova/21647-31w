@@ -1,6 +1,6 @@
 //nav
 .menu__primaire{
-    background-color: rgb(34, 71, 22);
+    background-color: rgb(79, 117, 66);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,8 +15,11 @@
 
     //li
     .menu-item{
-        margin-top: 30px;
+        
         max-width: 100%;
+        padding: 10px;
+        margin: 10px; 
+        background-color: rgb(232, 237, 236);
     }
     .menu-item:hover{
         background-color: rgb(90, 141, 68);
@@ -24,7 +27,7 @@
     a{
         text-decoration: none;
         padding: 20px;
-        color: rgb(221, 235, 218);
+        color: rgb(14, 57, 4);
     }
     a:hover{
         color: rgb(59, 67, 60);
