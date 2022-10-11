@@ -78,6 +78,18 @@ add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 	function igc31w_filtre_choix_menu($obj_menu, $arg){
 	// 	var_dump($obj_menu);
 	//  die();
+	
+	if ($arg->menu == "primaire"){
+		foreach($obj_menu as $cle => $value)
+		{
+		   // print_r($value);
+		   $value->title = substr($value->title,7);
+		  
+		   // echo $value->title . '<br>';
+	 
+		}
+	}
+
 	if ($arg->menu == "aside"){
 		foreach($obj_menu as $cle => $value)
 		{
