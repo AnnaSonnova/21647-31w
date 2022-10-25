@@ -11,8 +11,11 @@
 
 ?>
 
-	<footer>
-        <p>Mon pied de page</p>
+	<footer class="site__footer">
+        <p><?php get_sidebar( 'primary' ); ?></p>
+		<div>lorem1</div>
+		<div>lorem2</div>
+		<div>lorem3</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

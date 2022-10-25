@@ -1,14 +1,25 @@
 
-.site-footer{
-    width: 99vw;
-    margin: -1em;
-}
-.footer__copyright{
-    width: 100%;
-    min-height: 60px;
-    background-color:#a3793e; 
-    text-align: center;
-    padding-top: 1em;
-    color: aliceblue;
+// .site-footer{
+//     width: 99vw;
+//     margin: -1em;
+// }
+// .footer__copyright{
+//     width: 100%;
+//     min-height: 60px;
+//     background-color:#a3793e; 
+//     text-align: center;
+//     padding-top: 1em;
+//     color: aliceblue;
 
+// }
+
+.site__footer{
+    display: flex;
+    justify-content: space-around;
+}
+.site__footer div{
+    
+    flex: 1;
+
+    border: 1px solid #fff;
 }
