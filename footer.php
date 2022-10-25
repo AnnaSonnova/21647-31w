@@ -11,8 +11,11 @@
 
 ?>
 
-	<footer>
-        <p>Pied de page</p>
+	<footer class="site-footer">
+		<div>
+		<p class="footer__copyright">&copy; 2022. Anna Sonnova. Tous les droit réservés.</p>
+		</div>
+        
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -1,11 +1,11 @@
 <?php
 /**
- * The main template file
+ * Le fichier modèle principal
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * C’est le fichier modèle le plus générique dans un thème WordPress
+ * et l’un des deux fichiers requis pour un thème (l’autre étant style.css).
+ * Il est utilisé pour afficher une page lorsque rien de plus spécifique ne correspond à une requête.
+ * Par exemple, il rassemble la page d’accueil quand aucun fichier home.php n’existe.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
