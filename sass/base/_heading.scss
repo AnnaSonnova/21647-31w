@@ -1,6 +1,14 @@
 h1{
-    font-family: $police__titre-principal;  
+    font-family: $police__titre-principal;
+    font-size: clamp(.9rem, 2vw, 2.5rem);
   }
   h2,h3,h4,h5,h6 {
-      font-family: $police__titre-secondaire;  
+      font-family: $police__titre-secondaire; 
+      color:$color__text-input ;
+     
   }
+  a{
+    color: #d7b742;
+    
+  }
+  

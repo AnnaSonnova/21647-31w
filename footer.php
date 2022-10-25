@@ -12,7 +12,7 @@
 ?>
 
 	<footer>
-        <p>Mon pied de piueds</p>
+        <p>Mon pied de page</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

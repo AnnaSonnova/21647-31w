@@ -1,5 +1,5 @@
 /*!
-Nom du thème : a22-31w
+Nom du thème : a22-31w-Anna Chumbaieva
 Thème URI : http://underscores.me/
 Auteur : Underscores.me
 Auteur URI : http://underscores.me/
@@ -24,4 +24,25 @@ Domaine de texte : underscores
 // les éléments de base
 @import "base/body";
 @import "base/heading";
+@import "base/simple";
+@import "base/links";
+@import "base/buttons";
+@import "base/fields";
+@import "base/hr";
+@import "base/lists";
+@import "base/media";
+
+
+//components
+@import "composants/nav_principal";
+@import "composants/nav_aside";
+@import "composants/entete";
+@import "composants/footer";
+//layouts
+
+// @import "layouts/content-sidebar";
+// @import "layouts/no-sidebar";
+@import "layouts/sidebar-content";
+
+
 

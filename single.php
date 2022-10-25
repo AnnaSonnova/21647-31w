@@ -1,6 +1,5 @@
 <?php
 /**
- * 
  * The main template file
  *
  * This is the most generic template file in a WordPress theme
@@ -13,7 +12,7 @@
  * @package underscore
  */
 ?>
-
+<h1 class="trace">single.php</h1>
 <?php get_header(); ?>
 
     <main class="site__main">
@@ -22,7 +21,22 @@
             while ( have_posts() ) :
 				the_post(); 
                 the_title('<h2>','</h2>');
-                the_content(null, true);
+                the_content(null, true);?>
+                <section>
+                    <small>
+                        <span><?php the_weekday();?></span>
+                        <span><?php the_date();?></span>
+                        <span><?php the_time();?></span>    
+                    </small>
+                    <code>
+                        <?php the_author();?>    
+                    </code>
+                    <pre>
+                        <?php the_category();?>
+                    </pre>
+                </section>
+                <?php 
+
             endwhile;
         endif;
     ?>    

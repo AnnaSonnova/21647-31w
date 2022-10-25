@@ -23,15 +23,35 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<h1 class="site-title">
+	<header id="masthead" class="site__header">
+	<?php /* Affichage du menu primaire*/
+	 wp_nav_menu(array(
+			"menu" => "primaire",
+			"container" => "nav",
+			"container_class" => "menu__primaire"
+
+		)) ?>	
+		<div class="site__branding">
+			<h1 class="site__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			</h1>
 		<?php
 			$underscore_description = get_bloginfo( 'description', 'display' );
 			if ( $underscore_description || is_customize_preview() ) : ?>
-			<p class="site-description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>	
+
 		</div><!-- .site-branding -->
+		
 	</header><!-- #masthead -->
+	<aside class="widget__area">
+		<h3>Menu secondaire</h3>
+		<?php wp_nav_menu(array(
+			"menu" => "aside",
+			"container" => "nav",
+			"container_class" => "menu__aside"		
+		));
+			?>
+
+
+	</aside>
