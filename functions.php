@@ -111,12 +111,24 @@ add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 
 	add_action( 'widgets_init', 'my_register_sidebars' );
 	function my_register_sidebars() {
-	/* Register the 'primary' sidebar. */
+	/* Register the 'footer-1' sidebar. */
 	register_sidebar(
 		array(
-			'id'            => 'primary',
-			'name'          => __( 'Primary Sidebar' ),
-			'description'   => __( 'A short description of the sidebar.' ),
+			'id'            => 'footer-1',
+			'name'          => __( 'Sidebar-footer-1' ),
+			'description'   => __( 'Premier sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'id'            => 'footer-2',
+			'name'          => __( 'Sidebar-footer-2' ),
+			'description'   => __( 'deuxieme sidebar du footer' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',

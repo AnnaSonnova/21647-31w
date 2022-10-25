@@ -12,10 +12,10 @@
 ?>
 
 	<footer class="site__footer">
-        <p><?php get_sidebar( 'primary' ); ?></p>
+        <div><?php get_sidebar( 'footer-1' ); ?></div>
 		<div>lorem1</div>
 		<div>lorem2</div>
-		<div>lorem3</div>
+		<div><?php get_sidebar( 'footer-2' ); ?></div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
