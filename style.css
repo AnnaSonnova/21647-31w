@@ -654,6 +654,12 @@ figure {
   border: 1px solid #fff;
 }
 
+.footer__copyright {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
 .site {
   display: grid;
   grid-template-columns: auto;

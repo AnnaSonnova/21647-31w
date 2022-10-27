@@ -1,4 +1,3 @@
-
 <?php
 /**
  * underscore functions and definitions
@@ -135,5 +134,18 @@ add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 			'after_title'   => '</h3>',
 		)
 	);
+	register_sidebar(
+		array(
+			'id'            => 'footer-3',
+			'name'          => __( 'Sidebar-footer-3' ),
+			'description'   => __( 'troisieme sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
+?>
