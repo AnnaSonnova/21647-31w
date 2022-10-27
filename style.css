@@ -679,7 +679,7 @@ figure {
 @media screen and (min-width: 700px) {
   .site {
     grid-template-columns: 25% auto;
-    grid-template-areas: "header header" "sidebar-1 main" "sidebar-2 main" "footer footer";
+    grid-template-areas: "header header" "sidebar-1 main" "sidebar-2 main" ". main" "footer footer";
   }
 }
 
