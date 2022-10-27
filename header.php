@@ -44,14 +44,21 @@
 		</div><!-- .site-branding -->
 		
 	</header><!-- #masthead -->
-	<aside class="widget__area">
-		<h3>Menu secondaire</h3>
-		<?php wp_nav_menu(array(
-			"menu" => "aside",
-			"container" => "nav",
-			"container_class" => "menu__aside"		
-		));
-			?>
+	
 
-
-	</aside>
+		<aside class="widget__area1">
+			<h3>Menu secondaire</h3>
+			<?php wp_nav_menu(array(
+				"menu" => "aside",
+				"container" => "nav",
+				"container_class" => "menu__aside"		
+			));
+				?>
+	
+		</aside>
+		<aside class="widget__area2">
+			<div><?php get_sidebar( 'aside-1' ); ?></div>
+	
+		</aside>
+	
+	

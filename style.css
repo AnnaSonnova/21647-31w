@@ -555,7 +555,7 @@ ol {
 }
 
 ul {
-  list-style: disc;
+  list-style: none;
 }
 
 ol {
@@ -640,6 +640,13 @@ figure {
   margin: 20px;
   border: 1px solid #a3793e;
 }
+.sidebar-aside {
+  border: 0.5px solid #fff;
+  margin-right: 30px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
 .site__title {
   font-size: clamp(2rem, 4vw, 5rem);
 }
@@ -649,26 +656,30 @@ figure {
   justify-content: space-around;
 }
 
-.site__footer div {
+.site__footer > div {
   flex: 1;
-  border: 1px solid #fff;
+  padding: 10px;
+  border: 0.5px solid #fff;
+  justify-content: center;
 }
 
 .footer__copyright {
   margin-left: 15%;
-  margin-right: 15%;
+}
+
+.sidebar {
   text-align: center;
 }
 
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
+  grid-template-areas: "sidebar-1" "header" "main" "sidebar-2" "footer";
 }
 @media screen and (min-width: 700px) {
   .site {
     grid-template-columns: 25% auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header" "sidebar-1 main" "sidebar-2 main" "footer footer";
   }
 }
 
@@ -681,8 +692,12 @@ figure {
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area {
-  grid-area: sidebar;
+.widget__area1 {
+  grid-area: sidebar-1;
+}
+
+.widget__area2 {
+  grid-area: sidebar-2;
 }
 
 .site__footer {
