@@ -22,6 +22,7 @@
 				the_post(); 
                 the_title('<h2>','</h2>');?>
             <h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
+            
             <?php   the_content(null, true);?>
                 
             <?php endwhile;?>

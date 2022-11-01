@@ -1,0 +1,1 @@
+<h2>Duree du cours<?php the_field('heading'); ?></h2>
