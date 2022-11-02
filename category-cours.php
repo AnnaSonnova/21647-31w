@@ -22,8 +22,10 @@
 				the_post(); ?>
                 <h1><a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?></a></h1>
-                <h4>Durée du cours: <?php the_field('duree'); ?></h4>
-                <h4>Professeur: <?php the_field('professeur'); ?></h4>
+                <ul class="category__champ">
+                    <li>Durée du cours: <?php the_field('duree'); ?></li>
+                    <li>Professeur: <?php the_field('professeur'); ?></li>
+                </ul>
                 <?php the_content(null, true); ?>
                 
             <?php endwhile; ?>

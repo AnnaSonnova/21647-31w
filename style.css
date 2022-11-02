@@ -576,6 +576,10 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
+.category__champ {
+  color: rgb(106, 124, 124);
+}
+
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
