@@ -25,6 +25,7 @@
                 <ul class="category__champ">
                     <li>Durée du cours: <?php the_field('duree'); ?></li>
                     <li>Professeur: <?php the_field('professeur'); ?></li>
+                    <li>Préalable: <?php the_field('prealable'); ?></li>
                 </ul>
                 <?php the_content(null, true); ?>
                 
