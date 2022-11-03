@@ -3,18 +3,18 @@
 	display: grid;
 		grid-template-columns: auto;
 		grid-template-areas:
-		    "sidebar-1"
+		    "menu"
 			"header"
 			"main"
-			"sidebar-2"
+			"sidebar"
 			"footer";
 
 @media screen and (min-width :700px){
 	grid-template-columns: ($size__site-sidebar) auto;
 	grid-template-areas:
 		"header header"
-		"sidebar-1 main"
-		"sidebar-2 main"
+		"menu main"
+		"sidebar main"
 		". main"
 		"footer footer";
 }
@@ -30,13 +30,15 @@
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area1 {
-	grid-area: sidebar-1;
+.site__menu {
+	grid-area: menu;
 }
-.widget__area2{
-	grid-area: sidebar-2;
+.site__sidebar{
+	grid-area: sidebar;
 }
-
+.site__main{
+	margin-left: 20px;
+}
 .site__footer {
 	grid-area: footer;
 	

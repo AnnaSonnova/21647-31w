@@ -88,7 +88,9 @@ add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 	 
 		}
 	}
-
+	/**
+	 * Filtre le menu aside
+	 */
 	if ($arg->menu == "aside"){
 		foreach($obj_menu as $cle => $value)
 		{

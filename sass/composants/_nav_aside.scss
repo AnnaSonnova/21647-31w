@@ -1,6 +1,49 @@
+.site__menu{
+    position: relative;
+}
+.chk-burger{
+    display: none;
+}
+
+.chk-burger:checked ~ .burger{
+    transform: rotate(90deg);
+}
+.chk-burger:checked ~ .menu__aside{
+   transform: translateX(0);
+}
+
+.burger{
+   position:absolute;
+   top: 10px;
+   width: 2rem;
+   height: 2rem;
+   left: 0px;
+   transform: rotate(0deg);
+   transition: transform 0.5s;
+   font-size: 2rem;
+   color: #f9f6f2;
+   
+   @media screen and (min-width:700px) {
+        display: none;
+       
+   }
+}
 .menu__aside{
     display: flex;
-
+    position: absolute;
+    width: 100vw;
+    top:80px;
+    left:-10px;
+    background-color:$couleur__background-body;
+    transform: translateX(-100vw);
+    transition: transform 0.5s;
+   
+    @media screen and (min-width:700px){
+        position: static;
+        width: 100%;
+        transform: translateX(0);
+       
+    }
     
     .menu{
         list-style-type: none;
