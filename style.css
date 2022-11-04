@@ -473,7 +473,7 @@ input[type=submit] {
   border: 1px solid;
   border-color: #a57635;
   border-radius: 3px;
-  background: #a3793e;
+  background: rgba(159, 141, 117, 0.8235294118);
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
@@ -577,7 +577,7 @@ dd {
 }
 
 .category__champ {
-  color: rgb(113, 141, 141);
+  color: rgba(159, 141, 117, 0.8235294118);
 }
 
 /* Make sure embeds and iframes fit their containers. */
