@@ -19,7 +19,7 @@
    height: 2rem;
    left: 0px;
    transform: rotate(0deg);
-   transition: transform 0.5s;
+   transition: transform 0.4s;
    font-size: 2rem;
    color: #f9f6f2;
    
@@ -32,11 +32,11 @@
     display: flex;
     position: absolute;
     width: 100vw;
-    top:80px;
+    top:90px;
     left:-10px;
     background-color:$couleur__background-body;
     transform: translateX(-100vw);
-    transition: transform 0.5s;
+    transition: transform 0.4s;
    
     @media screen and (min-width:700px){
         position: static;
