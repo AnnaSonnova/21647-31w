@@ -54,8 +54,8 @@
 				"menu" => "aside",
 				"container" => "nav",
 				"container_class" => "menu__aside",
-				// 'befor'		=> '<div>',
-				// 'after'		=> '</div>',
+				'before'          => '<div>',
+				'after'           => '</div>',
 			));
 				?>
 	
