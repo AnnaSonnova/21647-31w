@@ -29,9 +29,10 @@
                     <li>Professeur: <?php the_field('professeur'); ?></li>
                     <li>Préalable: <?php the_field('prealable'); ?></li>
                 </ul>
-                <?php the_content(null, true); 
+                <?php the_content($more_link_text, true); 
                 
-                //the_excerp 
+                wp_trim_words($more_link_text,3,"...");
+                 
                 //wp_trim_words()
                 ?>
                 <article>
