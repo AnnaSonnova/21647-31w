@@ -16,31 +16,28 @@
 <?php get_header(); ?>
 
     <main class="site__main">
+        <h1>Cours</h1>
     <section class="liste">
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); ?>
                 <article class="liste__cours">
-                <h1><a href="<?php the_permalink();
+                <h2><a href="<?php the_permalink();
                 ?>">
-                <?php $titre = the_title('','',false);  echo substr($titre,8,-6)?></a></h1>
+                <?php $titre = the_title('','',false);  echo substr($titre,8,-6)?></a></h2>
                 <ul class="category__champ">
                     <li>Durée du cours: <?php the_field('duree'); ?></li>
                     <li>Professeur: <?php the_field('professeur'); ?></li>
                     <li>Préalable: <?php the_field('prealable'); ?></li>
                 </ul>
                 <p>
-
                 <?php
                 //  the_content($more_link_text, true); 
-                
                 echo wp_trim_words(get_the_excerpt(),30,"...");
-                 
-                
                 ?>
                 </p>
-                <article>
+            </article>
             <?php endwhile; ?>
         <?php endif; ?>
         </section>

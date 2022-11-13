@@ -1,9 +1,12 @@
 .liste {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  display: grid;
+  gap:20px;
+  grid-template-columns: repeat(3,[col] 1fr); 
+}
+
+.liste__cours {
+    border: 1px solid rgb(244, 232, 232);
+    padding-left: 10px;    
+}
+
   
-  .liste__cours {
-    flex: 0 1 20%;
-  }
