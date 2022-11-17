@@ -706,8 +706,23 @@ figure {
   margin-left: 20px;
 }
 
+.site__branding {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.site__branding > * {
+  display: inline-block;
+}
+
 .site__title {
   font-size: clamp(2rem, 4vw, 5rem);
+}
+
+.site__description {
+  font-size: 1.3em;
 }
 
 .custom-logo-link {
