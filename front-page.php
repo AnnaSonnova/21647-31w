@@ -23,12 +23,12 @@
         "container_class"=>"menu__evenement"
         
     ));?>
-<section class="liste">
+<section class="liste__accueil">
 
     <?php if ( have_posts() ) :
         while ( have_posts() ) :
             the_post(); ?>
-            <article class="liste__cours">
+            <article class="liste__accueil__cours">
 
                 <h1><a href="<?php the_permalink(); ?>">
                 <?php $titre = the_title('','',false);  echo substr($titre,8,-6)?></a></h1>

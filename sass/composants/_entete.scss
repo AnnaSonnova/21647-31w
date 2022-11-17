@@ -1,6 +1,6 @@
-.site__branding{
+// .site__branding{
 
-}
+// }
 
 .site__title{
 font-size:clamp(2rem, 4vw, 5rem);
@@ -9,6 +9,11 @@ font-size:clamp(2rem, 4vw, 5rem);
 
     // }
 }
-.site__description{
+// .site__description{
 
+// }
+.custom-logo-link{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }

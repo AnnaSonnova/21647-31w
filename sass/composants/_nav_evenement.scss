@@ -19,8 +19,7 @@
 .menu__evenement .menu-item a {
   text-decoration: none;
 }
-.menu__evenement .menu-item a:hover {
-}
+
 
 .menu-item:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -39,15 +38,23 @@
   
   width: 50px;
   height: 50px;
-  border: 1px solid rgb(138, 137, 137);
-}
-
-.evenement__porte .menu__item__icone {
   
 }
 
+.evenement__porte .menu__item__icone {
+  background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=building);
+  width: 30px;
+  height: 30px;
+}
+
 .evenement__projet .menu__item__icone {
+  background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=blackboard);
+  width: 30px;
+  height: 30px;
 }
 
 .evenement__stage .menu__item__icone {
+  background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=sweet-home);
+  width: 30px;
+  height: 30px;
 }
