@@ -14,7 +14,7 @@
    <?php if (have_posts()): the_post(); ?>
         <?php the_title() ?>
         <?php the_content() ?> 
-        <p> venez nous joindre au <?php the_field('adresse'); ?> </p>       
+        <p> venez nous joindre au <?php the_field('adresse'); the_field('date-heure') ; ?> </p>       
    <?php endif ?>
 </main>
 <?php get_footer() ?>
