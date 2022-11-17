@@ -1,4 +1,5 @@
 .menu__evenement {
+  margin-left: -35px;
 }
 
 .menu__evenement .menu {
@@ -6,11 +7,13 @@
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  border: 1px solid #bbb;
+  gap: 10px;
 }
 
 .menu__evenement .menu-item {
-  width: 25%;
+  width: 35%;
+  border: 1px solid #bbb;
+
 }
 
 .menu__evenement .menu-item a {
@@ -23,13 +26,13 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 .evenement__porte {
-  background-color: rgba(7, 7, 147, 0.863);
+  background-color: rgba(6, 6, 92, 0.863);
 }
 .evenement__projet {
   background-color: rgba(6, 6, 92, 0.863);
 }
 .evenement__stage {
-  background-color: rgba(9, 9, 51, 0.863);
+  background-color: rgba(6, 6, 92, 0.863);
 }
 
 .menu__item__icone {

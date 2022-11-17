@@ -10,11 +10,7 @@ main{
     color: #815d2a;
     font-size: 1.5em;
 }
-.site__main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .site__main h1{
     font-size:2em ;
     color: $couleur__background-h1;
