@@ -24,9 +24,12 @@ function underscore_setup() {
 
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'custom-logo', array(
-    'height' => 480,
-    'width'  => 720,
-) );
+    'height' => 150,
+    'width'  => 150,
+	) );
+
+	add_theme_support( 'post-thumbnails' );
+
 
 
     /*
@@ -206,7 +209,9 @@ add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 	 *
 	 */
 	function igc_31w_filtre_requete( $query ) {
-		if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+		if ( $query->is_home() 
+			&& $query->is_main_query()
+		 	&& ! is_admin() ) {
 			$query->set( 'category_name', 'accueil' );
 		}
 	}
