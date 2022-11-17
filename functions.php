@@ -22,6 +22,12 @@ function underscore_setup() {
 		*/
 	add_theme_support( 'title-tag' );
 
+	add_theme_support( 'title-tag' );
+	add_theme_support( 'custom-logo', array(
+    'height' => 480,
+    'width'  => 720,
+) );
+
 
     /*
 		* Remplacer le balisage de base par défaut pour le formulaire de recherche, le formulaire de commentaires et les commentaires
