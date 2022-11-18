@@ -28,17 +28,35 @@
     <?php if ( have_posts() ) :
         while ( have_posts() ) :
             the_post(); ?>
+           
             <article class="liste__accueil__cours">
 
-                <h1><a href="<?php the_permalink(); ?>">
-                <?php $titre = the_title('','',false);  echo substr($titre,8,-6)?></a></h1>
+                
                
-                <?php 
+                
+                <?php
+                $montableau = get_the_category();
+                $boolGalerie = false;
+                foreach($montableau as $cle){
+                    if($cle->slug == "galerie"){
+                        $boolGalerie = true;
+                    } 
+                }
+                if ($boolGalerie == true) { ?>
+                    <h1>
+                <?php  the_title(); ?></h1>
+                 <?php   the_content();
+                }else{?>
+                    <h1><a href="<?php the_permalink(); ?>">
+                    <?php $titre = the_title('','',false);  echo substr($titre,8,-6)?></a></h1> 
+                    <?php 
                 if ( has_post_thumbnail() ) {
                     the_post_thumbnail("thumbnail");
                 }
-                    ?>
-                <?= wp_trim_words(get_the_excerpt(),10, "...");?>
+                    ?> 
+                    <?= wp_trim_words(get_the_excerpt(),10, "...");?>
+               <?php }
+                ?>
                 
             </article>
         <?php endwhile; ?>

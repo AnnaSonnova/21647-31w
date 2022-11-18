@@ -12,6 +12,9 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+///////////inclusion customiseining 
+require_once("options/apparence.php");
+
 //////////////////////////////////////////////////
 function underscore_setup() {
 		/*
