@@ -23,7 +23,7 @@
    font-size: 2rem;
    color: #f9f6f2;
    
-   @media screen and (min-width:700px) {
+   @media screen and (min-width:800px) {
         display: none;
        
    }
@@ -38,7 +38,7 @@
     transform: translateX(-100vw);
     transition: transform 0.4s;
    
-    @media screen and (min-width:700px){
+    @media screen and (min-width:800px){
         position: static;
         width: 100%;
         transform: translateX(0);
@@ -65,10 +65,11 @@
 }
 .sidebar-aside {
     border: 0.5px solid #fff;
-    margin-right: 20px;
+    
     padding: 10px;
-    margin-left: 20px;
+    
 }
+
  
 // .menu__aside{}
 // .menu__aside .menu{}
