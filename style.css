@@ -664,11 +664,7 @@ figure {
   font-size: 2rem;
   color: #f9f6f2;
 }
-<<<<<<< HEAD
-@media screen and (min-width: 900px) {
-=======
 @media screen and (min-width: 800px) {
->>>>>>> 0e3c5bf1cf74a27c099dd532bf75ab508f4b9966
   .burger {
     display: none;
   }
@@ -684,11 +680,7 @@ figure {
   transform: translateX(-100vw);
   transition: transform 0.4s;
 }
-<<<<<<< HEAD
-@media screen and (min-width: 900px) {
-=======
 @media screen and (min-width: 800px) {
->>>>>>> 0e3c5bf1cf74a27c099dd532bf75ab508f4b9966
   .menu__aside {
     position: static;
     width: 100%;
@@ -875,11 +867,7 @@ figure {
   grid-template-columns: auto;
   grid-template-areas: "menu" "header" "main" "sidebar" "footer";
 }
-<<<<<<< HEAD
-@media screen and (min-width: 900px) {
-=======
 @media screen and (min-width: 800px) {
->>>>>>> 0e3c5bf1cf74a27c099dd532bf75ab508f4b9966
   .site {
     grid-template-columns: 25% auto;
     grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";

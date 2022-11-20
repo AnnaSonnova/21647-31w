@@ -23,7 +23,7 @@ function underscore_setup() {
 		* balise <title> codée en dur dans la tête du document, et s’attendre à ce que WordPress
 		* Fournissez-le-nous.
 		*/
-	add_theme_support( 'title-tag' );
+	
 
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'custom-logo', array(
