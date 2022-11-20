@@ -664,7 +664,7 @@ figure {
   font-size: 2rem;
   color: #f9f6f2;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .burger {
     display: none;
   }
@@ -680,7 +680,7 @@ figure {
   transform: translateX(-100vw);
   transition: transform 0.4s;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .menu__aside {
     position: static;
     width: 100%;
@@ -716,11 +716,12 @@ figure {
 }
 
 .site__title {
-  font-size: clamp(2rem, 4vw, 5rem);
+  font-size: clamp(1rem, 3vw, 4rem);
+  padding-top: 50px;
 }
 
 .site__description {
-  font-size: 1.3em;
+  display: none;
 }
 
 .custom-logo-link {
@@ -808,6 +809,22 @@ figure {
   height: 30px;
 }
 
+@media (min-width: 650px) and (max-width: 850px) {
+  .menu__evenement .menu {
+    flex-direction: column;
+  }
+  .menu__evenement .menu-item {
+    width: 80%;
+  }
+}
+@media (min-width: 350px) and (max-width: 650px) {
+  .menu__evenement .menu {
+    flex-direction: column;
+  }
+  .menu__evenement .menu-item {
+    width: 50%;
+  }
+}
 .liste {
   margin-top: 30px;
   display: grid;
@@ -821,12 +838,25 @@ figure {
 }
 
 .liste__accueil {
-  margin-top: 30px;
   display: grid;
-  gap: 40px;
   grid-template-columns: repeat(2, [col] 1fr);
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
+@media (min-width: 650px) and (max-width: 850px) {
+  .liste__accueil {
+    max-width: 80%;
+    grid-template-columns: repeat(1, [col] 1fr);
+  }
+}
+@media (min-width: 350px) and (max-width: 650px) {
+  .liste__accueil {
+    grid-template-columns: repeat(1, [col] 1fr);
+    max-width: 50%;
+  }
+}
 .liste__accueil__cours {
   border: 1px solid rgb(244, 232, 232);
   padding-left: 10px;
@@ -837,7 +867,7 @@ figure {
   grid-template-columns: auto;
   grid-template-areas: "menu" "header" "main" "sidebar" "footer";
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .site {
     grid-template-columns: 25% auto;
     grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";

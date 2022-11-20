@@ -58,3 +58,19 @@
   width: 30px;
   height: 30px;
 }
+@media (min-width: 650px) and  (max-width: 850px){
+  .menu__evenement .menu{
+    flex-direction: column;
+  }
+  .menu__evenement .menu-item {
+    width: 80%;
+  }
+}
+@media (min-width: 350px) and (max-width: 650px){
+  .menu__evenement .menu{
+    flex-direction: column;
+  }
+  .menu__evenement .menu-item {
+    width: 50%;
+  }
+}

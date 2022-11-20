@@ -10,14 +10,16 @@ margin-left: 20px;
  }
 
 .site__title{
-font-size:clamp(2rem, 4vw, 5rem);
+font-size:clamp(1rem, 3vw, 4rem);
+padding-top: 50px;
     // a{
     //     color:$couleur__site__title ;
 
     // }
 }
 .site__description{
-    font-size:1.3em;
+    
+    display: none;
 }
 .custom-logo-link{
     display: flex;
