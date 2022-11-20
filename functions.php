@@ -12,7 +12,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
-///////////inclusion customiseining 
+///////////inclusion du customizer de background-color */
 require_once("options/apparence.php");
 
 //////////////////////////////////////////////////
