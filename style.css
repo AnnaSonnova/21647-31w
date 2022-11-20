@@ -444,7 +444,7 @@ a {
   color: rgb(244, 232, 232);
 }
 a:visited {
-  color: #916c38;
+  color: rgb(44, 3, 3);
 }
 a:hover, a:focus, a:active {
   color: #f8f6f1;
@@ -664,7 +664,7 @@ figure {
   font-size: 2rem;
   color: #f9f6f2;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .burger {
     display: none;
   }
@@ -680,7 +680,7 @@ figure {
   transform: translateX(-100vw);
   transition: transform 0.4s;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .menu__aside {
     position: static;
     width: 100%;
@@ -701,9 +701,7 @@ figure {
 
 .sidebar-aside {
   border: 0.5px solid #fff;
-  margin-right: 20px;
   padding: 10px;
-  margin-left: 20px;
 }
 
 .site__branding {
@@ -776,15 +774,15 @@ figure {
 }
 
 .evenement__porte {
-  background-color: rgba(6, 6, 92, 0.863);
+  background-color: #707070;
 }
 
 .evenement__projet {
-  background-color: rgba(6, 6, 92, 0.863);
+  background-color: #707070;
 }
 
 .evenement__stage {
-  background-color: rgba(6, 6, 92, 0.863);
+  background-color: #707070;
 }
 
 .menu__item__icone {
@@ -839,7 +837,7 @@ figure {
   grid-template-columns: auto;
   grid-template-areas: "menu" "header" "main" "sidebar" "footer";
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 25% auto;
     grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
