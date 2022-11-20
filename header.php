@@ -17,7 +17,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<style>
-		.site__header { 
+		.liste__accueil { 
+			background-color:<?= get_theme_mod("site__title__background"); ?>;
+		}
+		.site__sidebar { 
 			background-color:<?= get_theme_mod("site__title__background"); ?>;
 		}
 		
