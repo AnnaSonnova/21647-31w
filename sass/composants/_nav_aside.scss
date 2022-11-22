@@ -65,10 +65,28 @@
 }
 .sidebar-aside {
     border: 0.5px solid #fff;
-    
     padding: 10px;
+}
+
+.site__sidebar{
+    display: flex;
+    flex-direction: column;
     
 }
+@media (min-width: 650px) and (max-width: 900px){
+    .site__sidebar{
+       
+        flex-direction: column;
+        max-width: 80%;
+    }
+} 
+@media (min-width: 300px) and (max-width: 650px){
+    .site__sidebar{
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+    }
+} 
 
  
 // .menu__aside{}
