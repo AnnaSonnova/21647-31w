@@ -1,0 +1,26 @@
+.liste__recherche{
+    display: grid;
+    grid-template-columns: repeat(3,[col] 1fr); 
+    gap:40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+@media (min-width: 650px) and (max-width: 850px){
+    .liste__recherche {
+        max-width: 80%;
+        grid-template-columns: repeat(2,[col] 1fr);
+    }
+}
+@media (min-width: 350px) and (max-width: 650px){
+    .liste__recherche {
+        grid-template-columns: repeat(1,[col] 1fr);
+        
+        max-width: 50%;
+        
+    }
+  }
+  
+  .liste__recherche__cours {
+      border: 1px solid rgb(22, 21, 21);
+      padding-left: 10px;    
+  }
