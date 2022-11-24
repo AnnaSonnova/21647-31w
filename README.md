@@ -20,8 +20,8 @@ https://prom10.sg-host.com/
 # TP2
 ### Objectif
 -ameliorer l'extension carrousel
--creer une page d'accueil interactive utilisateur le modele "front-page.php"
--dinamiser la structure de menu mobil actuel
+-creer une page d'accueil interactive utilisateur le modele "front-page.php" (blocs annonçant les événements)
+-dinamiser la structure de menu mobil actuel (bouton burger animé)
 -ameliorer structure de sidebar
 -ameliorer l'apperence du footer
 -creer un modele category-cours pour synthetiser l'offre de cours
