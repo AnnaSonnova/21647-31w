@@ -11,48 +11,31 @@
 <?php get_header(); ?>
 
     <main class="site__main">
-    <?php
-    wp_nav_menu(array(
-        "menu"=>"evenement",
-        "container"=>"nav",
-        "container_class"=>"menu__evenement"
-        
-    ));?>
+	<h1>Resultats de la recherche</h1>
 <section class="liste__recherche">
 
     <?php if ( have_posts() ) :
         while ( have_posts() ) :
             the_post(); ?>
            
-            <article class="liste__recherche__cours">
-
-                <?php
-                $montableau = get_the_category();
-                $boolGalerie = false;
-                foreach($montableau as $cle){
-                    if($cle->slug == "galerie"){
-                        $boolGalerie = true;
-                    } 
-                }
-                if ($boolGalerie == true) { ?>
-                    <h1><a href="<?php the_permalink(); ?>">
-                <?php  the_title(); ?></a></h1>
-                 <?php   the_content();
-                }else{?>
-                    <h1><a href="<?php the_permalink(); ?>">
-                    <?php $titre = the_title('','',false);  echo substr($titre,8,-6)?></a></h1> 
-                    <?php 
-                if ( has_post_thumbnail() ) {
-                    the_post_thumbnail("thumbnail");
-                }
-                    ?> 
-                    <?= wp_trim_words(get_the_excerpt(),10, "...");?>
-               <?php }
-                ?>
+		   <article class="liste__cours">
+		   <small> Element de recherche: <?php the_search_query();?></small>  
+                <h2><a href="<?php the_permalink();
+                ?>">
+                <?php $titre = the_title('','',false);  echo substr($titre,8,-6)?></a></h2>
                 
+                <p>
+                <?php
+                //  the_content($more_link_text, true); 
+                echo wp_trim_words(get_the_excerpt(),5,"&#9755;");
+                ?>
+                </p>
+				</p>
             </article>
         <?php endwhile; ?>
     <?php endif; ?>
+	
+	<p>Nombre de resultats:<?php echo $wp_query->found_posts.' resultats trouvés.'; ?></p>
 </section>
   
     </main>    

@@ -763,11 +763,13 @@ figure {
 
 @media (min-width: 650px) and (max-width: 850px) {
   .site__header > div {
+    max-width: 80%;
     grid-template-columns: repeat(1, [col] 1fr);
   }
 }
 @media (min-width: 350px) and (max-width: 650px) {
   .site__header > div {
+    max-width: 50%;
     grid-template-columns: repeat(1, [col] 1fr);
   }
 }
@@ -918,7 +920,7 @@ figure {
 
 .liste__recherche {
   display: grid;
-  grid-template-columns: repeat(3, [col] 1fr);
+  grid-template-columns: repeat(1, [col] 1fr);
   gap: 40px;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -927,7 +929,7 @@ figure {
 @media (min-width: 650px) and (max-width: 850px) {
   .liste__recherche {
     max-width: 80%;
-    grid-template-columns: repeat(2, [col] 1fr);
+    grid-template-columns: repeat(1, [col] 1fr);
   }
 }
 @media (min-width: 350px) and (max-width: 650px) {

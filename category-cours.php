@@ -23,6 +23,7 @@
             while ( have_posts() ) :
 				the_post(); ?>
                 <article class="liste__cours">
+                  
                 <h2><a href="<?php the_permalink();
                 ?>">
                 <?php $titre = the_title('','',false);  echo substr($titre,8,-6)?></a></h2>
