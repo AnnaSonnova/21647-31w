@@ -201,6 +201,29 @@ add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 			'after_title'   => '</h3>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'id'            => 'header-1',
+			'name'          => __( 'Sidebar-header-1' ),
+			'description'   => __( 'Premier sidebar du header' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'header-2',
+			'name'          => __( 'Sidebar-header-2' ),
+			'description'   => __( 'dexieme sidebar du header' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 	
 	/* Repeat register_sidebar() code for additional sidebars. */
 
