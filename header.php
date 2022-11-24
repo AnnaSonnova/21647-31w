@@ -51,7 +51,8 @@
 			<?php endif; ?>	
 
 		</div><!-- .site-branding -->
-		
+		<div><?php get_sidebar( 'header-1' ); ?></div>
+		<div><?php get_sidebar( 'header-2' ); ?></div>
 	</header><!-- #masthead -->
 	
 
