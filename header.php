@@ -49,10 +49,10 @@
 			if ( $underscore_description || is_customize_preview() ) : ?>
 			<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>	
-
+			<div class="sidebar__header"><?php get_sidebar( 'header-1' ); ?>
+		    <?php get_sidebar( 'header-2' ); ?></div>
 		</div><!-- .site-branding -->
-		<div><?php get_sidebar( 'header-1' ); ?></div>
-		<div><?php get_sidebar( 'header-2' ); ?></div>
+		
 	</header><!-- #masthead -->
 	
 
